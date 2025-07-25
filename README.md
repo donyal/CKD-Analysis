@@ -17,7 +17,7 @@ This repository presents an end-to-end analysis of Chronic Kidney Disease (CKD) 
 
 ## Dataset
 
-- **Source:** [Chronic Kidney Disease Dataset (Kaggle)](https://www.kaggle.com/datasets/mansoordaku/ckdisease)
+- **Source:** [Chronic Kidney Disease Dataset](https://www.kaggle.com/datasets/mansoordaku/ckdisease)
 - **Records:** 400 patients
 - **Attributes:** 25 clinical features (11 numerical, 14 nominal)
 - **Timeframe:** ~2 months in a hospital setting
