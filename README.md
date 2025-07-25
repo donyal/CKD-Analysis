@@ -34,6 +34,12 @@ The following chart provides a comparison of the cross-validation accuracy achie
 
 ![Model Accuracy Comparison](model-comparison.png)
 
+## Feature Importance from Random Forest
+
+The chart below displays the top features ranked by their importance in the Random Forest model used for chronic kidney disease (CKD) prediction. Higher values indicate features that contributed more significantly to the model’s decision-making process.
+
+![Random Forest Feature Importances](random-forest-features.png)
+
 ## Recommendations
 
 **For Healthcare Providers**
