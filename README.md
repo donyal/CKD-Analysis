@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository presents an end-to-end analysis of Chronic Kidney Disease (CKD) using clinical data. The project covers data preprocessing, robust machine learning modeling, and insightful visualizations, aiming to support early detection and improved management of CKD.
+This repository presents an end-to-end analysis of Chronic Kidney Disease (CKD) using clinical data. The project covers data preprocessing, robust machine learning modeling, and insightful visualizations.
 
 ## Table of Contents
 
@@ -10,7 +10,6 @@ This repository presents an end-to-end analysis of Chronic Kidney Disease (CKD) 
 - [Dataset](#dataset)
 - [Key Insights](#key-insights)
 - [Recommendations](#recommendations)
-- [Project Structure](#project-structure)
 - [How to Use](#how-to-use)
 - [Contributors](#contributors)
 
@@ -21,7 +20,7 @@ This repository presents an end-to-end analysis of Chronic Kidney Disease (CKD) 
 - **Attributes:** 25 clinical features (11 numerical, 14 nominal)
 - **Timeframe:** ~2 months in a hospital setting
 
-**Missing values handled via mean/mode imputation.**
+*Missing values handled via mean/mode imputation.*
 
 ## Key Insights
 
@@ -31,7 +30,7 @@ This repository presents an end-to-end analysis of Chronic Kidney Disease (CKD) 
 
 ## Model Performance Comparison
 
-The following chart provides a comparison of the cross-validation accuracy achieved by each machine learning model evaluated in this project. As shown below, the K-Nearest Neighbors (KNN) classifier outperformed both Decision Tree and Random Forest models, demonstrating the highest predictive accuracy for CKD classification on this dataset.
+The following chart provides a comparison of the cross-validation accuracy achieved by each machine learning model evaluated in this project. As shown below, the K-Nearest Neighbors (KNN) classifier performed the best.
 
 ![Model Accuracy Comparison](model-comparison.png)
 
@@ -46,20 +45,3 @@ The following chart provides a comparison of the cross-validation accuracy achie
 - Follow medical advice and adopt preventive lifestyle changes if at risk.
 - Schedule regular checkups, especially for those with known risk factors or family history.
 
-## Project Structure
-
-- `reports/` – Detailed PDF reports for each project phase (Part 3 report contains business analysis)
-- `notebooks/` – Jupyter notebooks for data processing, modeling, and visualization
-- `src/` – Python scripts for analysis and modeling
-
-## How to Use
-
-1. Explore interactive Jupyter notebooks in the `notebooks/` folder.
-2. Review in-depth reports in `reports/`.
-3. Use Python scripts in `src/` for custom analysis or to reproduce results.
-
-## Contributors
-
-- Donyal Emami
-- Joseph Irving
-- Ryan Nguyen
