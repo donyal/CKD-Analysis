@@ -1,19 +1,19 @@
 # Chronic Kidney Disease (CKD) Analysis
 
-## Overview
-
-This repository presents an end-to-end analysis of Chronic Kidney Disease (CKD) using clinical data. The project encompasses data preprocessing, robust machine learning modeling, and insightful visualizations to derive actionable insights for healthcare professionals and patients.
-
 ## Table of Contents
 
 - [Overview](#overview)
 - [Dataset](#dataset)
-- [Key Insights](#key-insights)
 - [Model Performance Comparison](#model-performance-comparison)
 - [Feature Importance from Random Forest](#feature-importance-from-random-forest)
+- [Key Insights](#key-insights)
 - [Recommendations](#recommendations)
 - [How to Use](#how-to-use)
 - [Contributors](#contributors)
+
+## Overview
+
+This repository presents an end-to-end analysis of Chronic Kidney Disease (CKD) using clinical data. The project encompasses data preprocessing, robust machine learning modeling, and insightful visualizations to derive actionable insights for healthcare professionals and patients.
 
 ## Dataset
 
@@ -24,11 +24,6 @@ This repository presents an end-to-end analysis of Chronic Kidney Disease (CKD) 
 
 *Missing values are handled via mean/mode imputation.*
 
-## Key Insights
-
-- Hemoglobin and RBC count are inversely correlated with CKD.
-- Hypertension, albumin, and serum creatinine are strong positive indicators.
-- Outliers handled with winsorization; key features selected using Recursive Feature Elimination (RFE).
 
 ## Model Performance Comparison
 
@@ -41,6 +36,13 @@ The chart below compares the cross-validation accuracy achieved by each machine 
 This chart highlights the top features ranked by their importance in the Random Forest model for CKD prediction. Higher values indicate greater contribution to model predictions.
 
 ![Random Forest Feature Importances](random-forest-features.png)
+
+
+## Key Insights
+
+- Hemoglobin and RBC count are inversely correlated with CKD.
+- Hypertension, albumin, and serum creatinine are strong positive indicators.
+- Outliers handled with winsorization; key features selected using Recursive Feature Elimination (RFE).
 
 ## Recommendations
 
