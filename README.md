@@ -6,6 +6,7 @@
 - [Dataset](#dataset)
 - [Model Performance Comparison](#model-performance-comparison)
 - [Feature Importance from Random Forest](#feature-importance-from-random-forest)
+- [After Winsorization](#after-winsorization)
 - [Key Insights](#key-insights)
 - [Recommendations](#recommendations)
 - [How to Use](#how-to-use)
@@ -36,6 +37,12 @@ The chart below compares the cross-validation accuracy achieved by each machine 
 This chart highlights the top features ranked by their importance in the Random Forest model for CKD prediction. Higher values indicate greater contribution to model predictions.
 
 ![Random Forest Feature Importances](random-forest-features.png)
+
+## After Winsorization
+
+This chart shows the effect of winsorization on the data, illustrating how outlier values have been adjusted for robust modeling.
+
+![After Winsorization](after-winsorization.png)
 
 
 ## Key Insights
