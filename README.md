@@ -55,13 +55,35 @@ This chart highlights the top features ranked by their importance in the Random 
 
 ## How to Use
 
-1. Clone this repository:
+1. **Clone this repository:**
    ```bash
    git clone https://github.com/donyal/CKD-Analysis.git
    cd CKD-Analysis
+   ```
+
+2. **Install the required packages:**  
+   It's recommended to use a virtual environment.
+   ```bash
+   python -m venv venv
+   source venv/bin/activate   # On Windows use: venv\Scripts\activate
+   pip install -r requirements.txt
+   ```
+
+3. **Open and run the Jupyter notebooks:**  
+   Start Jupyter Notebook or JupyterLab and open the provided `.ipynb` files to run the analysis step by step.
+   ```bash
+   jupyter notebook
+   ```
+   or
+   ```bash
+   jupyter lab
+   ```
+
+4. **(Optional) Download the dataset:**  
+   Download the [Chronic Kidney Disease Dataset from Kaggle](https://www.kaggle.com/datasets/mansoordaku/ckdisease) and place the CSV file in the project directory as required by the notebooks.
 
 
 ## Contributors
-  * Donyal Emami
-  * Joseph Irving
-  * Ryan Nguyen
+  * Donyal Emami - @donyal
+  * Joseph Irving - @catJoeIrving
+  * Ryan Nguyen - @ryrynbob
