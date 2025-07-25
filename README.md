@@ -2,13 +2,15 @@
 
 ## Overview
 
-This repository presents an end-to-end analysis of Chronic Kidney Disease (CKD) using clinical data. The project covers data preprocessing, robust machine learning modeling, and insightful visualizations.
+This repository presents an end-to-end analysis of Chronic Kidney Disease (CKD) using clinical data. The project encompasses data preprocessing, robust machine learning modeling, and insightful visualizations to derive actionable insights for healthcare professionals and patients.
 
 ## Table of Contents
 
 - [Overview](#overview)
 - [Dataset](#dataset)
 - [Key Insights](#key-insights)
+- [Model Performance Comparison](#model-performance-comparison)
+- [Feature Importance from Random Forest](#feature-importance-from-random-forest)
 - [Recommendations](#recommendations)
 - [How to Use](#how-to-use)
 - [Contributors](#contributors)
@@ -20,7 +22,7 @@ This repository presents an end-to-end analysis of Chronic Kidney Disease (CKD) 
 - **Attributes:** 25 clinical features (11 numerical, 14 nominal)
 - **Timeframe:** ~2 months in a hospital setting
 
-*Missing values handled via mean/mode imputation.*
+*Missing values are handled via mean/mode imputation.*
 
 ## Key Insights
 
@@ -30,13 +32,13 @@ This repository presents an end-to-end analysis of Chronic Kidney Disease (CKD) 
 
 ## Model Performance Comparison
 
-The following chart provides a comparison of the cross-validation accuracy achieved by each machine learning model evaluated in this project. As shown below, the K-Nearest Neighbors (KNN) classifier performed the best.
+The chart below compares the cross-validation accuracy achieved by each machine learning model evaluated in this project. Notably, the K-Nearest Neighbors (KNN) classifier outperformed others.
 
 ![Model Accuracy Comparison](model-comparison.png)
 
 ## Feature Importance from Random Forest
 
-The chart below displays the top features ranked by their importance in the Random Forest model used for chronic kidney disease (CKD) prediction. Higher values indicate features that contributed more significantly to the model’s decision-making process.
+This chart highlights the top features ranked by their importance in the Random Forest model for CKD prediction. Higher values indicate greater contribution to model predictions.
 
 ![Random Forest Feature Importances](random-forest-features.png)
 
@@ -51,3 +53,15 @@ The chart below displays the top features ranked by their importance in the Rand
 - Follow medical advice and adopt preventive lifestyle changes if at risk.
 - Schedule regular checkups, especially for those with known risk factors or family history.
 
+## How to Use
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/donyal/CKD-Analysis.git
+   cd CKD-Analysis
+
+
+## Contributors
+  * Donyal Emami
+  * Joseph Irving
+  * Ryan Nguyen
