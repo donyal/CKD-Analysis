@@ -1,146 +1,60 @@
-# Chronic Kidney Disease Prediction and Analysis
+# Chronic Kidney Disease (CKD) Analysis
 
-## Project Description
+## Overview
 
-A three-part group project focused on analyzing chronic kidney disease (CKD), encompassing data preprocessing, robust modeling, and effective visualization. This repository demonstrates an end-to-end data science workflow that extracts actionable insights from clinical health data to support early CKD diagnosis and management.
-
----
+This repository presents an end-to-end analysis of Chronic Kidney Disease (CKD) using clinical data. The project covers data preprocessing, robust machine learning modeling, and insightful visualizations, aiming to support early detection and improved management of CKD.
 
 ## Table of Contents
 
-- [Project Overview](#project-overview)
-- [Dataset Structure](#dataset-structure)
-- [Insights Summary](#insights-summary)
+- [Overview](#overview)
+- [Dataset](#dataset)
+- [Key Insights](#key-insights)
 - [Recommendations](#recommendations)
-- [Project Structure & Methodology](#project-structure--methodology)
-- [Key Metrics & Segmentation](#key-metrics--segmentation)
-- [How to Explore This Repository](#how-to-explore-this-repository)
-- [Group Members](#group-members)
+- [Project Structure](#project-structure)
+- [How to Use](#how-to-use)
+- [Contributors](#contributors)
 
----
+## Dataset
 
-## Project Overview
+- **Source:** [Chronic Kidney Disease Dataset (Kaggle)](https://www.kaggle.com/datasets/mansoordaku/ckdisease)
+- **Records:** 400 patients
+- **Attributes:** 25 clinical features (11 numerical, 14 nominal)
+- **Timeframe:** ~2 months in a hospital setting
 
-This project investigates how clinical health data can be leveraged to improve early detection and management strategies for Chronic Kidney Disease (CKD), aiming to enhance patient outcomes and optimize healthcare resource allocation.
+**Missing values handled via mean/mode imputation.**
 
-Through a three-part analytical process—data preparation, predictive modeling, and data visualization—we uncover the key predictors of CKD and demonstrate how machine learning can support healthcare professionals in risk stratification.
+## Key Insights
 
----
-
-## Dataset Structure
-
-The dataset was sourced from Kaggle and contains 400 patient records with 25 clinical attributes, collected over approximately two months in a hospital setting.
-
-### Numerical Attributes (11)
-
-- Age  
-- Blood Pressure  
-- Blood Glucose Random  
-- Blood Urea  
-- Serum Creatinine  
-- Sodium  
-- Potassium  
-- Hemoglobin  
-- Packed Cell Volume  
-- White Blood Cell Count  
-- Red Blood Cell Count  
-
-### Nominal Attributes (14)
-
-- Specific Gravity  
-- Albumin  
-- Sugar  
-- Red Blood Cells (normal/abnormal)  
-- Pus Cell (normal/abnormal)  
-- Pus Cell Clumps (present/notpresent)  
-- Bacteria (present/notpresent)  
-- Hypertension (yes/no)  
-- Diabetes Mellitus (yes/no)  
-- Coronary Artery Disease (yes/no)  
-- Appetite (good/poor)  
-- Pedal Edema (yes/no)  
-- Anemia (yes/no)  
-- Classification (ckd/notckd)  
-
-Missing values were handled during preprocessing using mean/mode imputation techniques.
-
----
-
-## Insights Summary
-
-### Critical Predictive Markers
-
-- Hemoglobin and red blood cell (RBC) count show strong inverse relationships with CKD.
-- Hypertension, albumin, and serum creatinine are strong positive indicators of CKD.
-- Elevated blood urea nitrogen (BUN) and random blood glucose (RBG) levels are closely associated with impaired renal function.
-- Diabetes mellitus emerged as a consistent and significant predictor of CKD progression.
-
-### Data Quality and Robustness
-
-- Winsorization was applied to treat outliers while retaining critical clinical significance.
-- Recursive Feature Elimination (RFE) helped reduce dimensionality and identify the most impactful combination of features.
-
-### Model Performance
-
-- All models (Decision Tree, Random Forest, K-Nearest Neighbors) performed well.
-- K-Nearest Neighbors (KNN) achieved the highest mean cross-validation accuracy (0.9924), making it the most suitable for this task.
-
-![Model Accuracy Comparison](model-comparison.png)
----
+- Hemoglobin and RBC count are inversely correlated with CKD.
+- Hypertension, albumin, and serum creatinine are strong positive indicators.
+- Outliers handled with winsorization; key features selected using Recursive Feature Elimination (RFE).
+- K-Nearest Neighbors achieved the best cross-validation accuracy (0.9924), outperforming Decision Tree and Random Forest.
 
 ## Recommendations
 
-### For Healthcare Providers
+**For Healthcare Providers**
+- Prioritize screening for patients with abnormal hemoglobin, serum creatinine, blood glucose, albumin, or hypertension.
+- Integrate predictive models into clinical workflows for early CKD risk detection.
+- Emphasize patient education on diabetes and hypertension management.
 
-- Focus CKD screening on patients with abnormal hemoglobin, serum creatinine, blood glucose, albumin, and hypertension indicators.
-- Integrate predictive models into clinical systems to support early risk detection and decision-making.
-- Enhance patient education on managing diabetes and hypertension.
-- Use machine learning as a complement, not a replacement, to holistic clinical evaluation.
+**For Patients**
+- Follow medical advice and adopt preventive lifestyle changes if at risk.
+- Schedule regular checkups, especially for those with known risk factors or family history.
 
-### For Patients
+## Project Structure
 
-- Individuals at risk should follow medical advice and adopt preventive lifestyle measures.
-- Routine checkups are essential for tracking CKD indicators, especially for those with known risk factors or a family history.
+- `reports/` – Detailed PDF reports for each project phase (Part 3 report contains business analysis)
+- `notebooks/` – Jupyter notebooks for data processing, modeling, and visualization
+- `src/` – Python scripts for analysis and modeling
 
----
+## How to Use
 
-## Project Structure & Methodology
+1. Explore interactive Jupyter notebooks in the `notebooks/` folder.
+2. Review in-depth reports in `reports/`.
+3. Use Python scripts in `src/` for custom analysis or to reproduce results.
 
-This project was conducted in three phases:
-
-1. **Data Preprocessing**  
-   - Mean/mode imputation for missing values  
-   - Winsorization to address extreme outliers  
-   - Recursive Feature Elimination for feature selection
-
-2. **Data Modeling**  
-   - Models: Decision Tree, Random Forest, K-Nearest Neighbors  
-   - Evaluated using accuracy and cross-validation  
-   - Tuned for optimal performance and generalization
-
-3. **Data Presentation and Visualization**  
-   - Feature importance, distributions, and correlations visualized for stakeholder understanding
-
----
-
-## Key Metrics & Segmentation
-
-Models were evaluated using standard classification metrics, focusing on accuracy and generalization through cross-validation. The insights support segmentation of patient populations based on CKD risk profiles, allowing for more personalized interventions.
-
----
-
-## How to Explore This Repository
-
-- `reports/` – Contains detailed PDF reports for each phase of the project. The Part 3 report offers the most comprehensive business analysis.
-- `notebooks/` – Interactive Jupyter notebooks covering data processing, modeling, and visualization.
-- `src/` – Standalone Python scripts used during analysis and modeling.
-
----
-
-## Group Members
+## Contributors
 
 - Donyal Emami
-- Joseph Irving  
+- Joseph Irving
 - Ryan Nguyen
-
----
