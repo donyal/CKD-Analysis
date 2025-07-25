@@ -85,6 +85,7 @@ Missing values were handled during preprocessing using mean/mode imputation tech
 - All models (Decision Tree, Random Forest, K-Nearest Neighbors) performed well, with some achieving perfect test accuracy.
 - K-Nearest Neighbors (KNN) achieved the highest mean cross-validation accuracy (0.9924), making it the most suitable for this task.
 
+![Model Accuracy Comparison](model-comparison.png)
 ---
 
 ## Recommendations
