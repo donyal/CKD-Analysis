@@ -28,7 +28,12 @@ This repository presents an end-to-end analysis of Chronic Kidney Disease (CKD) 
 - Hemoglobin and RBC count are inversely correlated with CKD.
 - Hypertension, albumin, and serum creatinine are strong positive indicators.
 - Outliers handled with winsorization; key features selected using Recursive Feature Elimination (RFE).
-- K-Nearest Neighbors achieved the best cross-validation accuracy (0.9924), outperforming Decision Tree and Random Forest.
+
+## Model Performance Comparison
+
+The following chart provides a comparison of the cross-validation accuracy achieved by each machine learning model evaluated in this project. As shown below, the K-Nearest Neighbors (KNN) classifier outperformed both Decision Tree and Random Forest models, demonstrating the highest predictive accuracy for CKD classification on this dataset.
+
+![Model Accuracy Comparison](model-comparison.png)
 
 ## Recommendations
 
